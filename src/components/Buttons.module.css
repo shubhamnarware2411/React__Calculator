@@ -1,0 +1,33 @@
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Add some space between the display and buttons */
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  margin: 5px; /* Increase margin for better spacing */
+  border: none;
+  border-radius: 50%; /* Make buttons circular */
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f0f0f0; /* Set a background color */
+  color: #333; /* Set text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.button:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+/* Adjust button size for smaller screens */
+@media screen and (max-width: 500px) {
+  .button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
